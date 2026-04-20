@@ -34,8 +34,10 @@ After doing some digging within the appropriate New_TO_PYTHON_JUPYTER.md file, h
 ### READ.me
 READ.me was incredibly helpful in understanding the input parameters required to run. Definitions of all 
 
+### Reproducibility
 
-#### Overall effectiveness
+
+### Overall effectiveness
 
 ## Minor Comments
 1. NEW_TO_PYTHON_JUPYTER.md links to the wrong file.
@@ -43,6 +45,14 @@ READ.me was incredibly helpful in understanding the input parameters required to
 
 2.
 
+
+How easy was it for you to obtain, install, and run the code?  Not the easiest. Address in Jupyter portion
+If you ran into road blocks, what were they, and what could the authors do differently to make their code easier to use?
+Do the authors provide good documentation, both inside and outside (e.g., README files) of their code?
+Do the authors provide information about how to reproduce the results in their paper?
+Do the authors provide or specify a way to create a computational environment with all the requirements in place for their code to work? YES AND NO. 
+Do the authors provide examples/tutorials for how to use their software? NO.
+Is the code modular. I.e., is it broken up into into functions and/or class methods? Long sections of code is often a sign of poor coding practices.
 -----------------------------------------------------------------------------------------------------------
 
 ### Paper Link
