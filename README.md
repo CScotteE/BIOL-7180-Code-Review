@@ -17,30 +17,22 @@ Overall, I thought the READ.me was incredibly helpful in understanding the input
 In terms of within-code documentation, I do want to mention the lack of notation in the code itself. While I recognize that the Jupyter notebook is supposed to run the code "under the hood", it is still important to make sure your code is notated properly to provide better reproducibility and confidence. A lack of notation in the code ultimately requires blind-faith in someone who isn't fluent in the python langauge. I think proper notation throughout the code could help guide someone through the 
 
 ### Reproducibility
-In terms of reproducibility, it would be great if you could provide a sample sequence, sample .fasta, and expected output results. While I want to recognize a decent description of the outputs in the READ.me, it would be nice to ensure that the code is running properly and that there are no hiccups after cloning the repository. By using the same data used to develop probes for the publication, any new users can ensure the code is working correctly. In the same vein (though somewhat less code related), including the method/considerations you used to develop the probes in the associated publication could help serve as a guide for someone who is just beginning to develop probes. For some of the optional features, I know there are genreally standards to follow (<5 AT repeats, etc.), so providing a tutorial and addressing these would made this repository and package incredibly accessible. 
+In terms of reproducibility, it would be great if you could provide a sample sequence, sample .fasta, and expected output results. While I want to recognize an adequate description of the outputs in the READ.me, it would be nice to ensure that the code is running properly and that there are no hiccups after cloning the repository. By using the same data used to develop probes for the publication, any new users can ensure the code is working correctly. In the same vein (though somewhat less code related), including the method/considerations you used to develop the probes in the associated publication could help serve as a guide for someone who is just beginning to develop probes. For some of the optional features, I know there are genreally standards to follow (<5 AT repeats, etc.), so providing a tutorial and addressing these would made this repository and package incredibly accessible. 
 
-### Overall effectiveness
-
+### Modularity
+Again, before starting this comment, I want to recognize that this code is meant to be utilized through the Jupyter notebook and make probe generation easier for those unfamiliar with scripting. With that being said, I do think modularity of the script itself can be improved. From what I see looking at the maker37cb.py script, the output function is doing a lot of the heavy lifting and I do believe a good portion of it could be separated into different functions providing different outputs. Maybe it's written this way to help facilitate it printing everything to STD OUT, but overall this seems a bit cumbersome. It also makes any future development of this code much harder, preventing any potential scientific progress that could be made by easily tweaking its different functions. 
 
 ## Minor Comments
-1. NEW_TO_PYTHON_JUPYTER.md links to the wrong file.
+1. NEW_TO_PYTHON_JUPYTER.md in READ.me links to the wrong file.
    - Seems to link to a previously developed repository... Similar information is contained within the .md, but clicking the link moves you to a completely different repository that contains different .py scripts. This could lead to some major confusion for those unfamiliar with github navigation or python.
 
 2. Saving the output as a .csv may be useful, rather than relying on copy/paste.
-   - While I recognize IDT requires an .xlsx file, converting a .csv to an .xlsx file might be a bit less convoluted than copying and pasting. A simple conversion like this could also prevent any errors from occuring during the copy and paste process.
+   - While I recognize IDT requires an .xlsx file, converting a .csv to an .xlsx file might be a bit less convoluted than copying and pasting. A simple conversion like this could also prevent any errors from occuring during the copy and paste process. It also would help remove a bulk of the redundant "print" statements in the code, making it more readable.  
   
 3. Information on dependencies hidden in the "NEW_TO_PYTHON_JUPYTER.md" file.
    - Moving this to the general READ.me file where all of the other basic information is would be beneficial. I personally wasn't very new so I didn't think to look here for general information about dependencies.
   
-4. 
 
-
-
-
-
-
-Is the code modular. I.e., is it broken up into into functions and/or class methods? Long sections of code is often a sign of poor coding practices.
-    Modular to an extent, but havily driven by input. ONly two real function were designed 
 -----------------------------------------------------------------------------------------------------------
 
 ### Paper Link
