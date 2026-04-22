@@ -22,7 +22,7 @@ In terms of reproducibility, it would be great if you could provide a sample seq
 ### Modularity
 Again, before starting this comment, I want to recognize that this code is meant to be utilized through the Jupyter notebook and make probe generation easier for those unfamiliar with scripting. With that being said, I do think modularity of the script itself can be improved. From what I see looking at the maker37cb.py script, the output function is doing a lot of the heavy lifting and I do believe a good portion of it could be separated into different functions providing different outputs. Maybe it's written this way to help facilitate it printing everything to STD OUT, but overall this seems a bit cumbersome. It also makes any future development of this code much harder, preventing any potential scientific progress that could be made by easily tweaking its different functions. 
 
-## Minor Comments
+## _Minor Comments_
 1. NEW_TO_PYTHON_JUPYTER.md in READ.me links to the wrong file.
    - Seems to link to a previously developed repository... Similar information is contained within the .md, but clicking the link moves you to a completely different repository that contains different .py scripts. This could lead to some major confusion for those unfamiliar with github navigation or python.
 
